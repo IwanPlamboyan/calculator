@@ -2,4 +2,4 @@
 kalkulator sederhana
 
 
-<h1>Project ini belum Responsive</h1>
+<h1>Project calculator ini belum Responsive dan perlu perbaikan</h1>
