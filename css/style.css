@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 800% 800%;
+}
+
+.calculator {
+  min-width: 273px;
+  min-height: 448px;
+  background: #5f657d;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+  font-family: Nova Round;
+  font-size: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 2.5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.screen {
+  width: 233px;
+  height: 91px;
+  background: #5f657d;
+  box-shadow: inset 1px 1px 12px #1e1f20, -2px -2px 10px 10px rgb(151, 147, 147);
+  margin: 20px;
+}
+
+.screenContent {
+  text-align: end;
+  padding: 17px;
+  font-size: 30px;
+}
+
+#result {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 5px;
+  overflow: auto;
+  user-select: all;
+}
+
+#resultText {
+  color: #f78731 !important;
+}
+
+.calculation {
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  overflow: auto;
+}
+
+.numPad {
+  width: 233px;
+  height: 296px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 19px;
+  grid-row-gap: 19px;
+}
+
+.numPad i {
+  font-size: 16px;
+}
+
+.style {
+  background: #5f657d;
+  box-shadow: 6px 6px 12px #1e1f20, -2px -2px 20px rgb(151, 147, 147);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.styleOnClick {
+  box-shadow: inset 2px 2px 4px #191a1e, inset -2px -2px 4px rgba(95, 94, 94, 0.25);
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+#allClear {
+  font-size: 20px;
+  color: #f1bf95fa;
+}
+
+.zero {
+  width: 107px;
+  height: 44px;
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.equal {
+  width: 44px;
+  height: 107px;
+  grid-area: 4 / 4 / 6 / 5;
+}
+
+p.footer {
+  margin-top: 50px;
+}
+
+p.footer i {
+  color: red;
+}
+
+p.footer a {
+  font-family: monospace;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+p.footer a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 992px) {
+  .calculator {
+    width: 273px;
+    height: 448px;
+    margin: 0 15px;
+  }
+}
