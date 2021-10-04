@@ -110,7 +110,7 @@ body {
 }
 
 p.footer {
-  margin-top: 50px;
+  margin: 50px auto 0;
 }
 
 p.footer i {
@@ -133,6 +133,6 @@ p.footer a:hover {
   .calculator {
     width: 273px;
     height: 448px;
-    margin: 0 15px;
+    margin: 10px 15px 0;
   }
 }
